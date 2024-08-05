@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %}Seleção Brasileira{% endblock %}</title>
+</head>
+
+<body>
+    <header background-image="{% static 'fundo.png' %}">
+        <div class="container">
+            <nav>
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'cbf-logo.png' %}" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="{% url 'index' %}">Início</a>
+                    <a href="{% url 'jogadores' %}">Jogadores</a>
+                    <a href="{% url 'sobre' %}">Sobre</a>
+                </ul>
+            </nav>
+            {% block content %}
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Seleção Brasileira</h1>
+                    <p>A Seleção Brasileira de Futebol, administrada pela CBF (Confederação Brasileira de Futebol), uma associação privada, representa o Brasil nas competições de futebol da CONMEBOL e FIFA.</p>
+                </div>
+            </section>
+            {% endblock %}
+        </div>
+    </header>
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="https://www.facebook.com/CBF/"> <i class="fa fa-facebook"></i> </a>
+                <a href="https://www.instagram.com/cbf_futebol/"> <i class="fa fa-instagram"></i> </a>
+                <a href="https://x.com/CBF_Futebol"><i class="fa fa-twitter"></i> </a>
+            </div>
+        </div>
+        <p>copyright © 2024.</p>
+    </footer>
+</body>
+
+</html>
