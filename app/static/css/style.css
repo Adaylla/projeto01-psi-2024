@@ -151,6 +151,15 @@ nav ul a:hover::after {
     padding-right: 40px;
 }
 
+.sobre .sobre-img {
+    width: 50%;
+}
+
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
 .jogadores h3 {
     text-align: center;
 }
@@ -217,5 +226,17 @@ nav ul a:hover::after {
     }
     .sobre .container {
         flex-direction: column;
+    }
+
+    .sobre .container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre .sobre-img,
+    .sobre .sobre-text{
+        width: 100%;
+    }
+    .sobre .sobre-text{
+        margin-top: 40px;
     }
 }
