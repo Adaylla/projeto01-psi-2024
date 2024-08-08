@@ -7,76 +7,105 @@
         <h3>Nossos Jogadores</h3>
         <p>Conheça os jogadores mais poderosos da seleção brasileira.</p>
         <div class="rows-cards">
+            {% for jogador in jogadores %}
             <div class="rows-cards-jogadores">
-                <img src="{% static 'endrick.png' %}" alt="">
-                <p class="nome-jogador"><strong>Endrick Felipe</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Endrick Felipe Moreira de Sousa, de 18 anos nascido em Taguatinga, Distrito Federal. É um futebolista brasileiro que atua como atacante.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}
+                </p>
+            </div>
+            {% endfor%}
+            <div class="rows-cards-jogadores">
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
+                <p class="descricao-jogador">
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}    
+                </p>        
+            </div>
+            <div class="rows-cards-jogadores">
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
+                <p class="descricao-jogador">
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}                
                 </p>
             </div>
             <div class="rows-cards-jogadores">
-                <img src="{% static 'rodrygo.png' %}" alt="">
-                <p class="nome-jogador"><strong>Rodrygo</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Rodrygo Silva de Goes, de 23 anos e nascido em Osasco, São Paulo. É um futebolista brasileiro que atua como atacante. </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static 'vini.png' %}" alt="">
-                <p class="nome-jogador"><strong>Vinicius Junior</strong></p>
-                <p class="descricao-jogador">
-                    Vinicius José Paixão de Oliveira Junior, de 24 anos e nascido no Rio de Janeiro, Rio de Janeiro. É um futebolista brasileiro que atua como ponta-esquerda.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}                
                 </p>
             </div>
             <div class="rows-cards-jogadores">
-                <img src="{% static 'paqueta.png' %}" alt="">
-                <p class="nome-jogador"><strong>Lucas Paquetá</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Lucas Tolentino Coelho de Lima, de 26 anos e nascido na Ilha de paquetá, Rio de Janeiro. É um futebolista brasileiro que atua como meio-campista.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}                
                 </p>
             </div>
             <div class="rows-cards-jogadores">
-                <img src="{% static 'bruno.png' %}" alt="">
-                <p class="nome-jogador"><strong>Bruno Guimarães</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Bruno Guimarães Rodrigues Moura, de 26 anos e nascido Rio de Janeiro, Rio de Janeiro. É um futebolista brasileiro que atua como volante e meio-campista.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}                
                 </p>
             </div>
             <div class="rows-cards-jogadores">
-                <img src="{% static 'joao.png' %}" alt="">
-                <p class="nome-jogador"><strong>João Gomes</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    João Victor Gomes da Silva, de 23 anos e nascido no Rio de Janeiro, Rio de Janeiro. É um futebolista brasileiro que atua como volante.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}
+                </p>       
+            </div>
+            <div class="rows-cards-jogadores">
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
+                <p class="descricao-jogador">
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}                
                 </p>
             </div>
             <div class="rows-cards-jogadores">
-                <img src="{% static 'danilo.png' %}" alt="">
-                <p class="nome-jogador"><strong>Danilo Silva</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Danilo Luiz da Silva, de 33 anos e nascido em Bicas, Minas Gerais. É um futebolista brasileiro que atua como lateral-direito e zagueiro. </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static 'marquinhos.png' %}" alt="">
-                <p class="nome-jogador"><strong>Marquinhos</strong></p>
-                <p class="descricao-jogador">
-                    Marcos Aoás Corrêa, de 30 anos e nascido em São Paulo, São Paulo. É um futebolista brasileiro que atua como zagueiro.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}            
                 </p>
             </div>
             <div class="rows-cards-jogadores">
-                <img src="{% static 'arana.png' %}" alt="">
-                <p class="nome-jogador"><strong>Guilherme Arana</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Guilherme Antonio Arana Lopes, de 27 anos e nascido em São Paulo, São Paulo. É um futebolista brasileiro que atua como lateral-esquerdo. </p>
-            </div>
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}
+                </p>
+            </div>                   
             <div class="rows-cards-jogadores">
-                <img src="{% static 'militao.png' %}" alt="">
-                <p class="nome-jogador"><strong>Éder Militão</strong></p>
+                <img src="{% static jogador.foto %}" alt="">
+                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
                 <p class="descricao-jogador">
-                    Éder Gabriel Militão, de 26 anos e nascido em Sertãozinho, São paulo. É um futebolista brasileiro que atua como zagueiro. </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static 'alisson.png' %}" alt="">
-                <p class="nome-jogador"><strong>Alisson Becker</strong></p>
-                <p class="descricao-jogador">
-                    Alisson Ramsés Becker, de 31 anos e nascido em Novo Hamburgo, Rio Grande do Sul. É um futebolista brasileiro que atua como goleiro.
+                    Idade: {{ jogador.idade}}<br>
+                    Local de nascimento: {{jogador.nascimento}}<br>
+                    Posição: {{jogador.posicao}}                
                 </p>
             </div>
         </div>
