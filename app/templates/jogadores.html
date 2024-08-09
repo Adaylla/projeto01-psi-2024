@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
+
 {% block title %}Jogadores | Seleção Brasileira{% endblock %}
+
+{% block banner_text %}
+    <h1>Jogadores</h1>
+{% endblock %}
+
 {% block content %}
 <section class="jogadores">
     <div class="container">
@@ -18,96 +24,7 @@
                 </p>
             </div>
             {% endfor%}
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}    
-                </p>        
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}                
-                </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}                
-                </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}                
-                </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}                
-                </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}
-                </p>       
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}                
-                </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}            
-                </p>
-            </div>
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}
-                </p>
-            </div>                   
-            <div class="rows-cards-jogadores">
-                <img src="{% static jogador.foto %}" alt="">
-                <p class="nome-jogador"><strong>{{ jogador.nome }}</strong></p>
-                <p class="descricao-jogador">
-                    Idade: {{ jogador.idade}}<br>
-                    Local de nascimento: {{jogador.nascimento}}<br>
-                    Posição: {{jogador.posicao}}                
-                </p>
-            </div>
+            
         </div>
     </div>
 </section>

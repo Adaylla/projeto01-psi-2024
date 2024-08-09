@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header style="background-image: url('{img/selecao\ fundo.png}');">
+    <header style="background-image: url('{%static 'fundo.png'%}');">
         <div class="container">
             <nav>
                 <a href="{% url 'index' %}">
@@ -24,16 +24,17 @@
                     <a href="{% url 'sobre' %}">Sobre</a>
                 </ul>
             </nav>
-            {% block content %}
             <section class="banner">
                 <div class="banner-text">
-                    <h1>Seleção Brasileira</h1>
-                    <p>A Seleção Brasileira de Futebol, administrada pela CBF (Confederação Brasileira de Futebol), uma associação privada, representa o Brasil nas competições de futebol da CONMEBOL e FIFA.</p>
+                {% block banner_text %}
+                {% endblock %}
                 </div>
             </section>
-            {% endblock %}
-        </div>
+          </div>
     </header>
+    {% block content %}
+
+    {% endblock %}
     <footer class="footer">
         <div class="container">
             <div class="links">
